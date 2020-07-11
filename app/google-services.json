@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "565157858298",
+    "firebase_url": "https://moodevator.firebaseio.com",
+    "project_id": "moodevator",
+    "storage_bucket": "moodevator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:565157858298:android:30e94ce7886c2f75b23243",
+        "android_client_info": {
+          "package_name": "com.example.moodevator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "565157858298-hoiv5p9fjsda7v2f3vu8b0218dj33ptc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moodevator",
+            "certificate_hash": "f5eff2a585ace6114196a34aec8e1d4492e22f87"
+          }
+        },
+        {
+          "client_id": "565157858298-ketoep9uiv7jo5p3mpng5jscvh6uaj72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDTByPrVOnpAEfDCPHI1PSFagG6wJPIjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "565157858298-ketoep9uiv7jo5p3mpng5jscvh6uaj72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

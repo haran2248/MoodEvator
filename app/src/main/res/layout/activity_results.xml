@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F3EF"
+    tools:context=".ResultsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smiling probability"
+        android:textColor="#ED08F300"
+        android:textSize="25dp"
+        android:id="@+id/smile_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smile"
+        android:text="Smiling probability"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/smile_text"
+        android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Awakeness probability"
+            android:textSize="25dp"
+            android:textColor="#EDCB5757"
+            android:id="@+id/right_eye_text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Awakeness probability"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/awake"
+            android:layout_toRightOf="@id/smile_text"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="RESULTS"
+        android:textColor="#ED184CCF"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:textColor="#FF9800"
+        android:id="@+id/results"
+        android:layout_margin="25dp"
+        android:text="Lorem ipsum trainer"/>
+
+
+</LinearLayout>
