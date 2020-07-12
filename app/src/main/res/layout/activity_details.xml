@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/dl"
+    tools:context=".Details">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_marginLeft="130dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Details"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone No"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:id="@+id/phone_text"
+            android:textSize="25dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="45dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/phone_input_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_input_edit_text"
+                android:layout_width="220dp"
+                android:layout_marginTop="45dp"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="friend's contact(1)"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:id="@+id/close_phone_text"
+            android:textSize="20dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/friend1_input_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/friend1_input_edit_text"
+                android:layout_width="200dp"
+                android:layout_marginTop="45dp"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="friend's contact(2)"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:id="@+id/close_friend_text"
+            android:textSize="20dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/friend2_input_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/friend2_input_edit_text"
+                android:layout_width="200dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:fontFamily="@font/raleway_semibold"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/loc_text"
+            android:textSize="20dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:inputType="text|textMultiLine"
+            android:layout_marginLeft="70dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/location_input_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/location_input_edit_text"
+                android:layout_width="200dp"
+                android:layout_marginTop="45dp"
+                android:inputType="text|textMultiLine"
+                android:layout_height="100dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="doctor's contact"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:id="@+id/doctor_phone_text"
+            android:textSize="20dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/doctor1_input_layout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/doctor1_input_edit_text"
+                android:layout_width="205dp"
+                android:layout_marginTop="45dp"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="155dp"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_marginTop="60dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#FFEFE7DA"
+    android:layout_margin="20dp"
+    android:background="@drawable/nameofxml"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="#EDCB5757"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#EDCB5757"
+            android:id="@+id/item_name"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:textColor="#EDCB5757"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/item_location"
+            android:textColor="#EDCB5757"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone no:"
+            android:textColor="#EDCB5757"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phone"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/item_phone"
+            android:textColor="#EDCB5757"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="Help:"
+            android:layout_marginLeft="10dp"
+            android:textColor="#EDED0909"
+            android:textSize="35dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/item_help"
+            android:textColor="#EDE61111"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="35dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
