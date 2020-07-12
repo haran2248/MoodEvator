@@ -30,6 +30,7 @@ public class ResultsActivity extends AppCompatActivity {
         }
         else{
             result.setText("Pls smile more!,Contact your friends and loved ones :)");
+
         }
     }
 }

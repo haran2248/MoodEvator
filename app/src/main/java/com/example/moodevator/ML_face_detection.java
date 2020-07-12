@@ -81,7 +81,6 @@ public class ML_face_detection extends AppCompatActivity {
                 Bitmap bitmap=cameraKitImage.getBitmap();
                 bitmap=Bitmap.createScaledBitmap(bitmap,cameraView.getWidth(),cameraView.getHeight(),false);
                 cameraView.stop();
-                
                 processFaceDetection(bitmap);
             }
 

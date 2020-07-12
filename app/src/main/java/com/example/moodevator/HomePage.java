@@ -17,7 +17,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -35,6 +41,8 @@ public class HomePage extends AppCompatActivity {
     ImageView b1,b2,b3,b4,b5;
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle actionBarDrawerToggle;
+    GoogleSignInOptions googleSignInOptions;
+    GoogleSignInClient googleSignInClient;
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
@@ -45,6 +53,10 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+        googleSignInOptions =  new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+        googleSignInClient= GoogleSignIn.getClient(this,googleSignInOptions);
 
         m1=findViewById(R.id.pursuit);
         m2=findViewById(R.id.shawshank);
@@ -90,6 +102,24 @@ public class HomePage extends AppCompatActivity {
                 if(id==R.id.mood){
                     Intent intent=new Intent(HomePage.this,ML_face_detection.class);
                     startActivity(intent);
+
+                }
+                if(id==R.id.home_page){
+                    Toast.makeText(HomePage.this,"this is the HomePage",Toast.LENGTH_LONG).show();
+
+                }
+                if(id==R.id.details){
+                    Intent intent=new Intent(HomePage.this,Details.class);
+                    startActivity(intent);
+                }
+                if(id==R.id.help){
+                    Intent intent=new Intent(HomePage.this,Help.class);
+                    startActivity(intent);
+                }
+                if(id==R.id.logout){
+
+                    Intent next=new Intent(HomePage.this, Profile.class);
+                    startActivity(next);
 
                 }
                 return true;

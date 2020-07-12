@@ -13,13 +13,24 @@
     </item>
 
     <item
+        android:id="@+id/details"
+        android:title="Edit Details"
+        >
+
+    </item>
+    <item
         android:id="@+id/help"
-        android:title="help"
+        android:title="Help"
         >
     </item>
     <item
         android:id="@+id/mood"
         android:title="Mood analyser"
+        >
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
         >
     </item>
 

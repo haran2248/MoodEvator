@@ -15,7 +15,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResultsActivity"></activity>
+        <activity android:name=".PostRV"></activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".Details" />
+        <activity android:name=".Help" />
+        <activity android:name=".ResultsActivity" />
         <activity android:name=".ML_face_detection" />
         <activity android:name=".ExpandedDetails" />
         <activity android:name=".HomePage" />

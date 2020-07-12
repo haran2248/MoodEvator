@@ -15,16 +15,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Smiling probability"
-        android:textColor="#ED08F300"
+        android:fontFamily="@font/raleway_semibold"
+        android:textColor="#EDF3AE00"
         android:textSize="25dp"
         android:id="@+id/smile_text"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="20dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/smile"
         android:text="Smiling probability"
+        android:fontFamily="@font/raleway_semibold"
         android:textSize="25dp"
         android:layout_marginLeft="10dp"
         android:layout_toRightOf="@id/smile_text"
@@ -38,15 +40,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Awakeness probability"
+            android:fontFamily="@font/raleway_semibold"
             android:textSize="25dp"
             android:textColor="#EDCB5757"
             android:id="@+id/right_eye_text"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="0dp"
             android:layout_marginTop="20dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Awakeness probability"
+            android:fontFamily="@font/raleway_semibold"
             android:textSize="25dp"
             android:layout_marginLeft="10dp"
             android:id="@+id/awake"
@@ -59,6 +63,7 @@
         android:layout_height="wrap_content"
         android:textSize="30dp"
         android:text="RESULTS"
+        android:fontFamily="@font/raleway_semibold"
         android:textColor="#ED184CCF"
         android:layout_marginLeft="130dp"
         android:layout_marginTop="20dp"/>
@@ -68,6 +73,7 @@
         android:textSize="35dp"
         android:textColor="#FF9800"
         android:id="@+id/results"
+        android:fontFamily="@font/raleway_semibold"
         android:layout_margin="25dp"
         android:text="Lorem ipsum trainer"/>
 
