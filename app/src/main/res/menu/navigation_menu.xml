@@ -7,15 +7,8 @@
     </item>
     <item
         android:id="@+id/posts"
-        android:title="Stories/Posts"
+        android:title="Stories"
        >
-
-    </item>
-
-    <item
-        android:id="@+id/details"
-        android:title="Edit Details"
-        >
 
     </item>
     <item
@@ -23,6 +16,13 @@
         android:title="Help"
         >
     </item>
+    <item
+        android:id="@+id/details"
+        android:title="Edit Details"
+        >
+
+    </item>
+
     <item
         android:id="@+id/mood"
         android:title="Mood analyser"

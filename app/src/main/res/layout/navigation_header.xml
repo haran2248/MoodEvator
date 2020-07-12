@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="35dp"
         android:textColor="#EDF8F5F5"
         android:text="Welcome"/>
         <TextView
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="35dp"
             android:id="@+id/username"
             android:textColor="#EDF8F5F5"
             android:text="User"/>

@@ -17,7 +17,7 @@
         android:text="Smiling probability"
         android:fontFamily="@font/raleway_semibold"
         android:textColor="#EDF3AE00"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:id="@+id/smile_text"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="20dp"/>
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:text="Awakeness probability"
             android:fontFamily="@font/raleway_semibold"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:textColor="#EDCB5757"
             android:id="@+id/right_eye_text"
             android:layout_marginLeft="0dp"
@@ -76,6 +76,46 @@
         android:fontFamily="@font/raleway_semibold"
         android:layout_margin="25dp"
         android:text="Lorem ipsum trainer"/>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Contact friend"-->
+<!--            android:textSize="25dp"-->
+<!--            android:id="@+id/friend_text"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="#FF9800"/>-->
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="CALL"-->
+<!--            android:id="@+id/friend_button"-->
+<!--            android:layout_marginLeft="60dp"/>-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Contact doctor"-->
+<!--            android:id="@+id/doctor_text"-->
+<!--            android:textSize="25dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:textColor="#FF9800"/>-->
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="CALL"-->
+<!--            android:id="@+id/doctor_button"-->
+<!--            android:layout_marginLeft="50dp"/>-->
+
+<!--    </LinearLayout>-->
 
 
 </LinearLayout>

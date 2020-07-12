@@ -116,6 +116,10 @@ public class HomePage extends AppCompatActivity {
                     Intent intent=new Intent(HomePage.this,Help.class);
                     startActivity(intent);
                 }
+                if(id==R.id.posts){
+                    Intent intent=new Intent(HomePage.this,PostRV.class);
+                    startActivity(intent);
+                }
                 if(id==R.id.logout){
 
                     Intent next=new Intent(HomePage.this, Profile.class);

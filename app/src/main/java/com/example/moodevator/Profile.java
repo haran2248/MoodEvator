@@ -1,10 +1,13 @@
 package com.example.moodevator;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -15,6 +18,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -27,11 +31,76 @@ public class Profile extends AppCompatActivity {
     Button logout;
     TextView name,friend1,doctor;
     GoogleSignInOptions gso;
+    ActionBarDrawerToggle actionBarDrawerToggle;
+    DrawerLayout drawerLayout;
     GoogleSignInClient googleSignInClient;
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return actionBarDrawerToggle.onOptionsItemSelected(item)||super.onOptionsItemSelected(item);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        drawerLayout=findViewById(R.id.dl);
+        actionBarDrawerToggle=new ActionBarDrawerToggle(this,drawerLayout,R.string.Open,R.string.Close);
+        actionBarDrawerToggle.setDrawerIndicatorEnabled(true);
+        drawerLayout.addDrawerListener(actionBarDrawerToggle);
+        actionBarDrawerToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        NavigationView navigationView=findViewById(R.id.navigation);
+        View view=navigationView.getHeaderView(0);
+        final TextView namer=view.findViewById(R.id.username);
+
+        DatabaseReference user= FirebaseDatabase.getInstance().getReference().child("users");
+        user.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                namer.setText(snapshot.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).getValue(Info.class).getName());
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id=item.getItemId();
+                if(id==R.id.mood){
+                    Intent intent=new Intent(Profile.this,ML_face_detection.class);
+                    startActivity(intent);
+
+                }
+                if(id==R.id.logout){
+                    Toast.makeText(Profile.this,"this is the HomePage",Toast.LENGTH_LONG).show();
+
+                }
+                if(id==R.id.details){
+                    Intent intent=new Intent(Profile.this,Details.class);
+                    startActivity(intent);
+                }
+                if(id==R.id.help){
+                    Intent intent=new Intent(Profile.this,Help.class);
+                    startActivity(intent);
+                }
+                if(id==R.id.posts){
+                    Intent intent=new Intent(Profile.this,PostRV.class);
+                    startActivity(intent);
+                }
+                if(id==R.id.home_page){
+
+                    Intent next=new Intent(Profile.this, HomePage.class);
+                    startActivity(next);
+
+                }
+                return true;
+            }
+        });
+
         gso=new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();

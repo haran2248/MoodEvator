@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:text="Name:"
             android:textColor="#EDCB5757"
-            android:fontFamily="@font/raleway_semibold"
+            android:fontFamily="@font/gotham_reg"
             android:textSize="25dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
             android:textColor="#EDCB5757"
             android:id="@+id/item_name"
             android:layout_marginLeft="25dp"
-            android:fontFamily="@font/raleway_semibold"
+            android:fontFamily="@font/gotham_reg"
             android:textSize="25dp"/>
     </LinearLayout>
     <LinearLayout
@@ -38,7 +38,7 @@
             android:text="Location:"
             android:textColor="#EDCB5757"
             android:layout_marginTop="15dp"
-            android:fontFamily="@font/raleway_semibold"
+            android:fontFamily="@font/gotham_reg"
             android:textSize="25dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
             android:id="@+id/item_location"
             android:textColor="#EDCB5757"
             android:layout_marginTop="15dp"
-            android:fontFamily="@font/raleway_semibold"
+            android:fontFamily="@font/gotham_reg"
             android:textSize="25dp"/>
     </LinearLayout>
     <LinearLayout
@@ -61,7 +61,7 @@
             android:text="Phone no:"
             android:textColor="#EDCB5757"
             android:layout_marginTop="15dp"
-            android:fontFamily="@font/raleway_semibold"
+            android:fontFamily="@font/gotham_reg"
             android:textSize="25dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
             android:layout_marginTop="15dp"
             android:id="@+id/item_phone"
             android:textColor="#EDCB5757"
-            android:fontFamily="@font/raleway_semibold"
+            android:fontFamily="@font/gotham_reg"
             android:textSize="25dp"/>
     </LinearLayout>
     <LinearLayout
@@ -83,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:fontFamily="@font/raleway_semibold"
+            android:fontFamily="@font/gotham_reg"
             android:text="Help:"
             android:layout_marginLeft="10dp"
             android:textColor="#EDED0909"
@@ -96,7 +96,7 @@
             android:id="@+id/item_help"
             android:textColor="#EDE61111"
             android:layout_marginTop="15dp"
-            android:fontFamily="@font/raleway_semibold"
+            android:fontFamily="@font/gotham_reg"
             android:textSize="35dp"/>
     </LinearLayout>
 
